@@ -16,23 +16,64 @@
   flex-direction: row-reverse;
 }
 
-.btm{
-  position: fixed;
-  width: 100%;
-  bottom: 2px;
-  display: flex;
-  flex-direction: row;
+.btm {
+    position: fixed;
+    width: 1200px;
+    bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #000000;
+    padding: 2px;
+    background: #fff;
 }
 .btm input{
   padding: 10px 0;
   flex-grow: 1;
+  border: none;
 }
-.btm button{
-  padding: 10px 0;
+.btm button {
+    padding: 10px 0;
+    padding: 2px 20px;
+    border: none;
+    border-radius: 12px;
+    background: #858585;
+    color: #ffff;
 }
 
 .chat-container{
   height: 70vh;
   overflow-y:scroll;
   border: 1px solid black;
+      padding: 35px;
+}
+
+
+.mainContainer {
+      height: 100vh;
+    width: 1200px;
+    margin: 0px auto;
+}
+
+.EntryBox{
+  display: flex;
+  justify-content: space-between
+}
+
+.EntryBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.EntryBox h3 {
+    font-size: 30px;
+}
+
+.EntryBox input {
+    padding: 8px 24px;
+    border-radius: 18px;
+        font-size: 22px;
 }

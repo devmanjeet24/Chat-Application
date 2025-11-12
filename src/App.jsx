@@ -38,11 +38,14 @@ function App() {
   return (
     <>
 
+    <div className='mainContainer'>
+
       {
         name ? null
           :
-          <div>
-            <input type="text" placeholder='Pleasse enter your name' onBlur={e => Setname(e.target.value)} />
+          <div className='EntryBox'>
+             <h3>Hi User, Please Enter your name</h3>
+            <input type="text" placeholder='Please enter your name' onBlur={e => Setname(e.target.value)} />
           </div>
       }
 
@@ -76,7 +79,7 @@ function App() {
           </div> : null
       }
 
-
+    </div>
 
     </>
   )
